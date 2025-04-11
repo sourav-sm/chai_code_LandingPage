@@ -5,6 +5,7 @@ import Hero from './sections/Hero'
 import Cohort from './sections/Cohort'
 import Features from './sections/Feature'
 import KeyBenefit from './sections/KeyBenefit'
+import Testimonials from './sections/Testimonials';
 
 function App() {
   
@@ -17,7 +18,7 @@ function App() {
 
       <h1>Mohanta</h1>
       <Cohort/>
-      <h1>**</h1>
+      <Testimonials/>
       <KeyBenefit/>
       <Features/>
     </div>

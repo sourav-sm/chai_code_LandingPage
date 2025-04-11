@@ -1,6 +1,9 @@
 const cardStyle = "bg-[#1a1a1a] border border-gray-600 rounded-xl p-4 shadow-md text-white";
 // import chai-white from "../assets/chai-white.png";
 import hitesh from "../assets/hitesh-sir-image.jpg";
+import { FaGithub } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Features(){
     return(  
@@ -34,6 +37,18 @@ export default function Features(){
           </p>
           <h3 className="font-semibold text-lg mb-2">Approach</h3>
           <p className="text-sm text-gray-300">Project based courses with peer learning and bounties with many activities</p>
+          {/* social links */}
+          <div className="flex justify-center items-center gap-3 mt-3 text-3xl">
+            <a href="https://github.com/hiteshchoudhary" target="_blank">
+               <FaGithub/>
+            </a>
+            <a href="https://x.com/Hiteshdotcom?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+               <FaXTwitter/>      
+            </a>
+            <a href="https://www.youtube.com/@chaiaurcode" target="_blank">
+               <FaYoutube/>    
+            </a>
+          </div>
         </div>
 
         {/* Right Column */}
@@ -54,7 +69,7 @@ export default function Features(){
       </div>
 
       {/* CTA Button */}
-      <div className="text-center mt-10">
+      <div className="text-center mt-8">
         <button className="bg-orange-500 text-black font-semibold px-6 py-3 rounded-xl hover:bg-yellow-400 transition">
           Join Cohorts Live Classes
         </button>
