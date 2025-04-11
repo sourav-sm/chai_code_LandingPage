@@ -1,11 +1,20 @@
+import { TypeAnimation } from 'react-type-animation';
+
 export default function Hero(){
     return (
         <section className="bg-white lg:grid lg:h-screen lg:place-content-center dark:bg-gray-900">
      <div className="mx-auto w-screen max-w-screen-2xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
         
     <div className="mx-auto max-w-3xl text-center">
-    <div className="text-base text-pretty text-gray-700 sm:text-lg/relaxed dark:text-gray-200 border px-3 py-1 -mt-16 max-w-fit mx-auto rounded-md">
-  <p className="text-sm leading-tight">Trusted by 1.5M Code Learners</p>
+    <div className="text-base text-pretty text-gray-700 sm:text-lg/relaxed dark:text-gray-200  px-3 py-1 -mt-16 max-w-fit mx-auto rounded-md">
+    <p className="text-sm leading-tight">
+      <TypeAnimation
+        sequence={['Trusted by 1.5M Code Learners', 2000]}
+        speed={30}
+        wrapper="span"
+        repeat={0}
+      />
+    </p>
 </div>
 
       <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl dark:text-white mb-8">
@@ -28,7 +37,6 @@ export default function Hero(){
   <div className="aspect-video">
     <iframe
       className="w-full h-full rounded-md"
-    //   src="https://youtu.be/q8EevlEpQ2A?si=_Subx0NQDhgkmAlh"
     src="https://www.youtube.com/embed/q8EevlEpQ2A"
       title="YouTube video player"
       frameBorder="0"

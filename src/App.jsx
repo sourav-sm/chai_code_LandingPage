@@ -6,6 +6,7 @@ import Cohort from './sections/Cohort'
 import Features from './sections/Feature'
 import KeyBenefit from './sections/KeyBenefit'
 import Testimonials from './sections/Testimonials';
+import TweetSection from './sections/TweetSection'
 
 function App() {
   
@@ -14,9 +15,7 @@ function App() {
     <div>
       <Header/>
       <Hero/>
-      <h1>sourav</h1>
-
-      <h1>Mohanta</h1>
+      <TweetSection/>
       <Cohort/>
       <Testimonials/>
       <KeyBenefit/>
