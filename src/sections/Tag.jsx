@@ -113,12 +113,12 @@ export default function TopicsCloud() {
     return (
       <div className="bg-black">
         <div className="flex flex-col justify-center items-center text-white">
-            <h1 className="text-4xl font-bold">Topics Cloud</h1>
-            <p>You can find videos and courses on topics and much more</p>
+            <h1 className="text-4xl font-bold text-orange-500">Topics Cloud</h1>
+            <p className="text-lg mt-2">You can find videos and courses on topics and much more</p>
         </div>
 
-        <div className="max-h-screen w-full bg-gradient-to-br from-[#010b16] to-[#021f2f] flex items-center justify-center px-6 py-12">
-            <div className="flex flex-wrap justify-center gap-6 max-w-6xl text-white">
+        <div className="max-h-screen w-full bg-gradient-to-br bg-black flex items-center justify-center px-6 py-12">
+            <div className="flex flex-wrap justify-center gap-6 max-w-7xl text-white">
               {topics.map((topic, idx) => (
                 <motion.div
                   key={idx}
@@ -132,12 +132,14 @@ export default function TopicsCloud() {
                   <img
                     src={topic.imglink}
                     alt={topic.name}
-                    className="h-20 w-20 object-cover rounded-full border-2 border-white"
+                    className="h-28 w-28 object-cover rounded-full border-2 border-white"
                   />
                 </motion.div>
               ))}
             </div>
         </div>
+
+        
       </div>
     );
   }

@@ -40,7 +40,7 @@ const KeyBenefits = () => {
   return (
     <section className="bg-black text-white py-16 px-6">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-2">Key Benefits of Cohorts</h1>
+        <h1 className="text-4xl font-bold text-center mb-2 text-orange-500">Key Benefits of Cohorts</h1>
         <p className="text-center text-lg mb-12 text-gray-300">
           Cohorts are the best way to learn because you finish the course in a timely manner
         </p>

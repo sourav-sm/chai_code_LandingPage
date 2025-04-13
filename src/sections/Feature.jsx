@@ -8,7 +8,7 @@ import { FaXTwitter } from "react-icons/fa6";
 export default function Features(){
     return(  
         <div className="bg-black text-white py-16 px-4 md:px-20">
-            <h1 className="text-4xl md:text-5xl font-bold text-center mb-2">But Why ChaiCode ?</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-center mb-2 text-orange-500">But Why ChaiCode ?</h1>
              <p className="text-center text-gray-400 text-lg mb-12">ChaiCode exists because we love tech and teaching</p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

@@ -33,9 +33,9 @@ const cardData=[
 
 export default function Cohort(){
     return (
-        <div className="bg-white lg:grid lg:h-screen lg:place-content-center dark:bg-gray-900">
+        <div className="bg-white lg:grid lg:h-screen lg:place-content-center dark:bg-black">
             <div className="text-white flex flex-col justify-center items-center mb-5">
-                <h1 className="text-5xl font-bold">Cohorts</h1>
+                <h1 className="text-5xl font-bold text-orange-500">Cohorts</h1>
                 <p className="text-2xl font-bold">Live Training Classes</p>
             </div>
 

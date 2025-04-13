@@ -50,8 +50,8 @@ const testimonials = [
 export default function Testimonials(){
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center py-10 px-4">
-      <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">
-        Our <span className="text-white">Students feedback</span>
+      <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center text-orange-500">
+        Our Students feedback
       </h1>
       <p className="text-gray-300 text-center max-w-xl mb-10">
         Explore the incredible advantages of enrolling in our courses and enhancing your skills.
