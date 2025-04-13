@@ -7,6 +7,7 @@ import Features from './sections/Feature'
 import KeyBenefit from './sections/KeyBenefit'
 import Testimonials from './sections/Testimonials';
 import TweetSection from './sections/TweetSection'
+import TopicsCloud from  './sections/Tag';
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
       <Testimonials/>
       <KeyBenefit/>
       <Features/>
+      <TopicsCloud/>
     </div>
   )
 }
