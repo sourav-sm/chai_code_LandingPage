@@ -31,7 +31,7 @@ export default function TweetCards(){
           {TweetInfo.map((tweet,idx) => (
             <div
               key={idx}
-              className="border border-gray-500 rounded-lg w-96 h-80 flex items-center justify-center text-white"
+              className="border border-gray-500 rounded-lg w-96 h-80 flex items-center justify-center text-white transform transition hover:-translate-y-2"
             >
               <a href={tweet.tweetLink} target="_blank">
               <img src={tweet.img} alt="" className=""/>

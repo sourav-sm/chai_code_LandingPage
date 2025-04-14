@@ -26,7 +26,7 @@ export default function Hero(){
       </p>
 
       <div className="flex justify-center bg-orange-500  items-center gap-1 mt-4  text-pretty text-gray-700 sm:text-lg/relaxed dark:text-gray-200 border px-3 py-1 max-w-fit mx-auto rounded-md ">
-          <a className="text-2xl" href="https://courses.chaicode.com/learn" >Check all Live Cohorts</a>
+          <a className="text-2xl" href="https://courses.chaicode.com/learn" > Check all Live Cohorts </a>
            <span className="relative flex h-4 w-4 pt-0.5">
              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-800 opacity-95"></span>
              <span className="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span>

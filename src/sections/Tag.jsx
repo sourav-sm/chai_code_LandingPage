@@ -12,7 +12,10 @@ import flluter from "../assets/topic_clound_img/flluter.png";
 import git from "../assets/topic_clound_img/git.png";
 import numpy from "../assets/topic_clound_img/numpy.png";
 import tailwindcss from "../assets/topic_clound_img/tailwindcss.png";
-
+import nextjs1 from "../assets/topic_clound_img/nextjs.jpeg";
+import javascript from "../assets/topic_clound_img/js.png";
+import nodejs from "../assets/topic_clound_img/nodejs.png";
+import typescript from "../assets/topic_clound_img/typescript.png";
 
 
 const topics = [
@@ -45,7 +48,7 @@ const topics = [
     youtubeLink:"https://www.youtube.com/watch?v=j6szNSzw4BU&list=PLu71SKxNbfoDOf-6vAcKmazT92uLnWAgy"
   },
   {
-    imglink:django,
+    imglink:nextjs1,
     name:"Nextjs",
     youtubeLink:"https://www.youtube.com/watch?v=OgS1ZWZItno&list=PLu71SKxNbfoBAaWGtn9GA2PTw0HO0tXzq"
   },
@@ -54,12 +57,12 @@ const topics = [
     name:"Rectjs",
     youtubeLink:"https://www.youtube.com/watch?v=vz1RlUyrc3w&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige"
   },{
-    imglink:django,
+    imglink:javascript,
     name:"Javascript",
     youtubeLink:"https://www.youtube.com/watch?v=Hr5iLG7sUa0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37"
   },
   {
-    imglink:django,
+    imglink:nodejs,
     name:"NodeJs",
     youtubeLink:""
   },
@@ -91,7 +94,7 @@ const topics = [
     youtubeLink:"https://www.youtube.com/watch?v=XmLOwJHFHf0&list=PLu71SKxNbfoDBNF5s-WH6aLbthSEIMhMI"
   },
   ,{
-    imglink:django,
+    imglink:typescript,
     name:"Typescript",
     youtubeLink:"https://www.youtube.com/watch?v=j89BvWz8Eag&list=PLRAV69dS1uWRPSfKzwZsIm-Axxq-LxqhW"
   },
@@ -116,30 +119,34 @@ export default function TopicsCloud() {
             <h1 className="text-4xl font-bold text-orange-500">Topics Cloud</h1>
             <p className="text-lg mt-2">You can find videos and courses on topics and much more</p>
         </div>
-
-        <div className="max-h-screen w-full bg-gradient-to-br bg-black flex items-center justify-center px-6 py-12">
-            <div className="flex flex-wrap justify-center gap-6 max-w-7xl text-white">
-              {topics.map((topic, idx) => (
-                <motion.div
-                  key={idx}
-                  onClick={() => handleClick(topic.youtubeLink)}
-                  className="rounded-full border  hover:border-orange-500 shadow-lg hover:shadow-orange-500/40 transition-all duration-300 cursor-pointer flex flex-col items-center"
-                  whileHover={{ scale: 1.1 }}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: idx * 0.05 }}
-                >
-                  <img
-                    src={topic.imglink}
-                    alt={topic.name}
-                    className="h-28 w-28 object-cover rounded-full border-2 border-white"
-                  />
-                </motion.div>
-              ))}
-            </div>
-        </div>
-
-        
+         <div className="w-full bg-black flex items-center justify-center px-6 py-12">
+           <div className="flex flex-wrap justify-center gap-6 max-w-7xl text-white">
+             {topics.map((topic, idx) => (
+               <motion.div
+                 key={idx}
+                 onClick={() => handleClick(topic.youtubeLink)}
+                 className="rounded-full border hover:border-orange-500 shadow-lg hover:shadow-orange-500/40 transition-all duration-300 cursor-pointer flex flex-col items-center"
+                 whileHover={{ scale: 1.1, rotate: 3 }}
+                 animate={{
+                   x: [0, -10, 0],
+                   y: [0, -30, 0], // floating effect
+                 }}
+                 transition={{
+                   duration: 2,
+                   repeat: Infinity,
+                   repeatType: "reverse",
+                   delay: idx * 0.1,
+                 }}
+               >
+                 <img
+                   src={topic.imglink}
+                   alt={topic.name}
+                   className="w-20 h-20 sm:w-28 sm:h-28 object-cover rounded-full border-2 border-white"
+                 />
+               </motion.div>
+             ))}
+           </div>
+         </div>  
       </div>
     );
   }

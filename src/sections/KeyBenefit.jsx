@@ -51,8 +51,8 @@ const KeyBenefits = () => {
           ))}
         </div>
 
-        <div className="border border-white p-6 rounded-lg flex justify-between gap-3">
-            <div className=" bg-black flex justify-center items-center">
+        <div className="border border-white p-6 rounded-lg flex justify-between gap-3 ">
+            <div className=" bg-black flex justify-center items-center transition transform hover:-translate-y-2 hover:translate-z-2">
               <CollageBouncingBalls />
             </div>
             <div className="flex flex-col gap-3 ml-5">

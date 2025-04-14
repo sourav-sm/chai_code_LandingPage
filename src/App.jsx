@@ -11,6 +11,7 @@ import TopicsCloud from  './sections/Tag';
 import Community from './sections/Community';
 import FreeApi from "./sections/FreeApi"
 import Footer from "./sections/Footer";
+import AppDownload from "./sections/Appdownload";
 
 function App() {
   
@@ -27,6 +28,7 @@ function App() {
       <TopicsCloud/>
       <Community/>
       <FreeApi/>
+      <AppDownload/>
       <Footer/>
     </div>
   )
