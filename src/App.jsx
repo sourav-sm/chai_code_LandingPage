@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import './App.css'
 import Header from './components/header'
 import Hero from './sections/Hero'
@@ -12,9 +12,17 @@ import Community from './sections/Community';
 import FreeApi from "./sections/FreeApi"
 import Footer from "./sections/Footer";
 import AppDownload from "./sections/Appdownload";
+import Loading from './components/Loading'
 
 function App() {
-  
+  const [isLoading,setIsLoading]=useState(true);
+
+  useEffect(()=>{
+    const timer=setTimeout(()=>setIsLoading(false),1800);
+    return()=>clearTimeout(timer);
+  },[]);
+
+  if(isLoading)return <Loading/>
 
   return (
     <div>

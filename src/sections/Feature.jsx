@@ -39,13 +39,13 @@ export default function Features(){
           <p className="text-sm text-gray-300">Project based courses with peer learning and bounties with many activities</p>
           {/* social links */}
           <div className="flex justify-center items-center gap-3 mt-3 text-3xl">
-            <a href="https://github.com/hiteshchoudhary" target="_blank">
+            <a className="transition transform hover:-translate-y-1.5" href="https://github.com/hiteshchoudhary" target="_blank">
                <FaGithub/>
             </a>
-            <a href="https://x.com/Hiteshdotcom?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+            <a className="transition transform hover:-translate-y-1.5" href="https://x.com/Hiteshdotcom?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
                <FaXTwitter/>      
             </a>
-            <a href="https://www.youtube.com/@chaiaurcode" target="_blank">
+            <a className="transition transform hover:-translate-y-1.5" href="https://www.youtube.com/@chaiaurcode" target="_blank">
                <FaYoutube/>    
             </a>
           </div>

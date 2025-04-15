@@ -4,7 +4,7 @@ const cardData=[
     {
         videoUrl:"https://www.youtube.com/embed/yG8JMlldoCE",
         title:" Web Dev Cohort - Live 1.0 ",
-        courseInfo:"Learn to build software for web with best and latest tech stack",
+        courseInfo:"Master full-stack web development with Web Dev Cohort - Live 1.0. Learn HTML, CSS, JS, React, Next.js, Node, Docker, databases like MongoDB/PostgreSQL, DevOps with AWS (ECR, EC2, CloudFront), modern workflows like Turbo Repo, TypeScript, and GitHub CI/CD.",
         coursePrice:{ current:"6,999 INR",original:"8,999 INR"},
         courseUrl:"https://courses.chaicode.com/learn/batch/about?bundleId=214297"
     },
@@ -31,6 +31,7 @@ const cardData=[
     }
 ]
 
+
 export default function Cohort(){
     return (
         <div className="bg-white lg:grid lg:h-screen lg:place-content-center dark:bg-black">
@@ -39,20 +40,32 @@ export default function Cohort(){
                 <p className="text-2xl font-bold">Live Training Classes</p>
             </div>
 
-        <div className="overflow-x-auto px-5">
-            <div className="flex gap-4 p-5 w-max scroll-smooth snap-x snap-mandatory">
-              {cardData.map((data,index) => (
-                <div key={index} className="snap-start shrink-0">
-                  <Card 
-                    videoUrl={data.videoUrl} 
-                    title={data.title} 
-                    CourseIndo={data.courseInfo} 
-                    CoursePrice ={data.coursePrice}
-                    CourseUrl={data.courseUrl}
-                    />
+            <div className="overflow-x-auto lg:px-10"
+            style={{
+                scrollbarWidth: "none",
+                msOverflowStyle: "none"
+              }}>
+                <div className="flex gap-10 p-5 w-max scroll-smooth snap-x snap-mandatory"
+                 style={{
+                    overflow: "hidden"
+                  }}
+                >
+                    {cardData.map((data, index) => (
+                        <div 
+                          key={index} 
+                          className="snap-start shrink-0 w-[320px] sm:w-[360px] md:w-[400px] border-2 border-white transition transform hover:-translate-y-2 hover:border-orange-500 rounded-xl"
+                        >
+                            <Card 
+                                videoUrl={data.videoUrl} 
+                                title={data.title} 
+                                CourseIndo={data.courseInfo} 
+                                CoursePrice={data.coursePrice}
+                                CourseUrl={data.courseUrl}
+                            />
+                        </div>
+                    ))}
                 </div>
-              ))}
             </div>
         </div>
-    </div>
-)}
+    );
+}

@@ -39,12 +39,15 @@ export default function TweetCards(){
             </div>
           ))}
         </div>
-  
+        
+        <div className="pt-5 pb-5">
         <a href="https://courses.chaicode.com/learn" className="mt-4 px-5 py-2 border-2 border-yellow-500 rounded bg-orange-500 transition">
           Join Cohorts Live Classes
         </a>
+        </div>
+        
   
-        <p className="text-lg text-gray-200 mt-2">
+        <p className="text-lg text-gray-200 pt-4">
           Our students are not only working in big tech companies
           <br />
           but are now founders of funded startups and product creators

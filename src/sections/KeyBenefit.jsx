@@ -51,11 +51,11 @@ const KeyBenefits = () => {
           ))}
         </div>
 
-        <div className="border border-white p-6 rounded-lg flex justify-between gap-3 ">
-            <div className=" bg-black flex justify-center items-center transition transform hover:-translate-y-2 hover:translate-z-2">
+        <div className="border border-white p-6 rounded-lg flex flex-col lg:flex-row justify-between gap-6 ">
+            <div className=" bg-black flex justify-center items-center w-full lg:w-1/2">
               <CollageBouncingBalls />
             </div>
-            <div className="flex flex-col gap-3 ml-5">
+            <div className="flex flex-col gap-3 lg:ml-5 w-full lg:w-1/2">
                <h2 className="text-orange-500 text-2xl font-semibold">Alumni Network and job listings</h2>
                 <p className="text-white text-sm font-semibold">
                   The alumni Network that you always wished for in your college. We have a dedicated platform where students get to
