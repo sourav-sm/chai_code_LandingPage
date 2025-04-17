@@ -1,18 +1,53 @@
 import Marquee from "react-fast-marquee";
+import netflix from "../assets/netflix.webp";
+import amazon from "../assets/amazon.jpeg";
+import meta from "../assets/meta.jpg";
+import google from "../assets/google.jpg";
+import x from "../assets/x.jpg";
+import zomato from "../assets/zomato.png";
+import zepto from "../assets/zepto.png"
+
+const LogoImages=[
+  {
+    image:netflix
+  },
+  {
+    image:zomato
+  },
+  {
+    image:meta
+  },
+  {
+    image:zomato
+  },
+  {
+    image:google
+  },
+  {
+    image:x
+  },
+  {
+    image:zepto
+  },
+  {
+    image:netflix
+  },
+  {
+    image:amazon
+  },
+  {
+    image:zomato
+  }
+]
+
 
 const LogoCarousel = () => {
-  const logos = Array.from({ length: 10 }); // dummy array
 
   return (
     <div className="bg-black">
       <Marquee gradient={false} speed={40}>
-        {logos.map((_, idx) => (
-          <div
-            key={idx}
-            className="border border-gray-500 rounded-lg w-40 h-24 mx-4 flex items-center justify-center text-white text-lg"
-          >
-            Logo Card
-          </div>
+        {LogoImages.map(( logo,idx) => (
+          <img key={idx} src={logo.image} alt="" className=" w-40 h-24 " />
         ))}
       </Marquee>
     </div>

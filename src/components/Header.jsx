@@ -50,15 +50,6 @@ export default function Header(){
           >
             Login
           </a>
-
-          {/* <div className="hidden sm:flex">
-            <a
-              className="rounded-md bg-white px-5 py-2.5 text-sm font-medium text-black"
-              href="#"
-            >
-              Register
-            </a>
-          </div> */}
         </div>
 
         <div className="block md:hidden">

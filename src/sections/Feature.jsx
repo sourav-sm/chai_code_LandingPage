@@ -1,5 +1,4 @@
 const cardStyle = "bg-[#1a1a1a] border border-gray-600 rounded-xl p-4 shadow-md text-white";
-// import chai-white from "../assets/chai-white.png";
 import hitesh from "../assets/hitesh-sir-image.jpg";
 import { FaGithub } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
