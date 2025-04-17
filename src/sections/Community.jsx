@@ -24,7 +24,7 @@ export default function Community() {
           >
             {/* Front Side */}
             <div
-              className="absolute w-full h-full border border-gray-700 rounded-lg p-4 flex flex-col items-center justify-center backface-hidden"
+              className="absolute w-full h-full border border-gray-700 rounded-2xl p-4 flex flex-col items-center justify-center backface-hidden"
               style={{ backfaceVisibility: "hidden" }}
             >
               <img src={chaicodewhite} alt="" className="mb-6" />

@@ -141,7 +141,7 @@ export default function TopicsCloud() {
                  <img
                    src={topic.imglink}
                    alt={topic.name}
-                   className="w-20 h-20 sm:w-28 sm:h-28 object-cover rounded-full border-2 border-white"
+                   className="w-20 h-16 sm:w-28 sm:h-28 object-cover rounded-full border-2 border-white"
                  />
                </motion.div>
              ))}

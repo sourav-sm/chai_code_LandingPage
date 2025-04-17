@@ -7,12 +7,14 @@ import Features from './sections/Feature'
 import KeyBenefit from './sections/KeyBenefit'
 import Testimonials from './sections/Testimonials';
 import TweetSection from './sections/TweetSection'
+import Udemy from './sections/Udemy'
 import TopicsCloud from  './sections/Tag';
 import Community from './sections/Community';
 import FreeApi from "./sections/FreeApi"
 import Footer from "./sections/Footer";
 import AppDownload from "./sections/Appdownload";
 import Loading from './components/Loading'
+
 
 function App() {
   const [isLoading,setIsLoading]=useState(true);
@@ -31,6 +33,7 @@ function App() {
       <TweetSection/>
       <Cohort/>
       <Testimonials/>
+      <Udemy/>
       <KeyBenefit/>
       <Features/>
       <TopicsCloud/>
