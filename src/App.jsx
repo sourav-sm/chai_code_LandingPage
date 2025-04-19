@@ -1,47 +1,28 @@
 import { useState,useEffect } from 'react'
 import './App.css'
-import Header from './components/Header'
-import Hero from './sections/Hero'
-import Cohort from './sections/Cohort'
-import Features from './sections/Feature'
-import KeyBenefit from './sections/KeyBenefit'
-import Testimonials from './sections/Testimonials';
-import TweetSection from './sections/TweetSection'
-import Udemy from './sections/Udemy'
-import TopicsCloud from  './sections/Tag';
-import Community from './sections/Community';
-import FreeApi from "./sections/FreeApi"
-import Footer from "./sections/Footer";
-import AppDownload from "./sections/Appdownload";
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import Loading from './components/Loading'
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 
 
 function App() {
   const [isLoading,setIsLoading]=useState(true);
 
   useEffect(()=>{
-    const timer=setTimeout(()=>setIsLoading(false),1800);
+    const timer=setTimeout(()=>setIsLoading(false),1200);
     return()=>clearTimeout(timer);
   },[]);
 
   if(isLoading)return <Loading/>
 
   return (
-    <div>
-      <Header/>
-      <Hero/>
-      <TweetSection/>
-      <Cohort/>
-      <Testimonials/>
-      <Udemy/>
-      <KeyBenefit/>
-      <Features/>
-      <TopicsCloud/>
-      <Community/>
-      <FreeApi/>
-      <AppDownload/>
-      <Footer/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="*" element={<NotFound/>}/>
+      </Routes>
+    </Router>
   )
 }
 
