@@ -2,7 +2,7 @@ import Marquee from "react-fast-marquee";
 import netflix from "../assets/netflix.webp";
 import amazon from "../assets/amazon.jpeg";
 import meta from "../assets/meta.jpg";
-import google from "../assets/google.jpg";
+import google from "../assets/Google.jpg";
 import x from "../assets/x.jpg";
 import zomato from "../assets/zomato.png";
 import zepto from "../assets/zepto.png"
