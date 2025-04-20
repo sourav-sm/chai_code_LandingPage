@@ -1,12 +1,122 @@
-# React + Vite
+# 💻 ChaiCode Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive landing page for a coding platform, built with **React**, **Vite**, **TailwindCSS**, **Framer Motion**, and **React Icons**. This project showcases smooth animations, sleek design, and a fast development setup.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [React Icons](https://react-icons.github.io/react-icons/)
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Responsive design for all screen sizes
+- Smooth animations and transitions with Framer Motion
+- Easy-to-customize UI components
+- Modular code structure using React
+- Lightning-fast build and dev server with Vite
+
+## 🖼️ Preview
+
+ ![Screenshot 2025-04-20 232954](https://github.com/user-attachments/assets/e2ce059d-095e-402f-b690-90979976baaf)
+
+## Fully Responsive
+![image](https://github.com/user-attachments/assets/70eb014e-6f4a-4b86-beda-4f9624631de4)
+
+## 🔴 Live Link 
+**Do Check It Out [chaicode](https://chai-code-landing-page.vercel.app/)**
+
+
+## 📦 Getting Started
+### Prerequisites
+
+-   Node.js (v14 or later)
+
+Follow these steps to run the project locally:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/sourav-sm/chai_code_LandingPage.git
+cd chaicode
+```
+### 2. Install Dependencies
+```
+npm install
+# or
+yarn install
+```
+### 3. Clone the repository
+```
+npm run dev
+# or
+yarn dev
+
+```
+## 🛠 Folder Structure
+```bash
+chaicode/
+├── public/
+│   ├── favicon.ico
+│   └── other-static-assets/
+├── src/
+│   ├── assets/
+│   │   └── images-of-logos-and-icons
+│   ├── components/
+│   │   ├── BenefitCard.jsx
+│   │   ├── Card.jsx
+│   │   ├── Collage.jsx
+│   │   ├── Header.jsx
+│   │   ├── Loading.jsx
+│   │   ├── LogoCarousel.jsx
+│   │   ├── Rating.jsx
+│   │   └── TweetCards.jsx
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   └── NotFound.jsx
+│   ├── sections/
+│   │   ├── Appdownload.jsx
+│   │   ├── Cohort.jsx
+│   │   ├── Community.jsx
+│   │   ├── Feature.jsx
+│   │   ├── Footer.jsx
+│   │   ├── FreeApi.jsx
+│   │   ├── Hero.jsx
+│   │   ├── KeyBenefit.jsx
+│   │   ├── Tag.jsx
+│   │   ├── Testimonials.jsx
+│   │   ├── TweetSection.jsx
+│   │   └── Udemy.jsx
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── vite.config.js
+└── README.md
+
+```
+## Contribution
+We welcome contributions from the community! Follow these steps to contribute:
+
+1.  Fork the repository on GitHub.
+2.  Create a new branch with a `descriptive-name`.
+3.  Make your changes and commit them with clear and concise messages.
+4.  Push your changes to your fork.
+5.  Create a pull request to the `main` branch of the original repository.
+
+## Contact
+
+For any questions or suggestions, feel free to open an issue or contact here.
+-   Sourav Mohanta - developersourav135@gmail.com
+-   Portfolio: https://sourav-mohanta.vercel.app/
+
+
+
+
