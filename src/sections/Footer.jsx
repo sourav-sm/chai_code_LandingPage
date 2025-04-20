@@ -3,12 +3,12 @@ import chaicode from "../assets/chaicode-white.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-10 px-6 md:px-20">
+    <footer className="bg-black text-white py-10 px-6 md:px-20 overflow-x-hidden">
       <div className="flex flex-col md:flex-row justify-between items-start gap-10">
         {/* Left section */}
         <div>
           <div className="flex items-center gap-2 text-2xl font-bold">
-            <img src={chaicode} alt="ChaiCode Logo - Home for programmers" className="h-10" /> rel="noopener noreferrer"
+            <img src={chaicode} alt="ChaiCode Logo - Home for programmers" className="h-10" />
           </div>
           <p className="mt-2 text-gray-400">Home for programmers</p>
 
@@ -65,7 +65,7 @@ const Footer = () => {
       </div>
 
       {/* Large background text */}
-      <div className="text-[18vw] md:text-[180px] font-bold text-center mt-16 text-transparent bg-clip-text bg-gradient-to-t from-orange-700 to-orange-500 opacity-20">
+      <div className="text-[14vw] sm:text-[12vw] md:text-[10vw] lg:text-[180px] font-bold text-center mt-16 text-transparent bg-clip-text bg-gradient-to-t from-orange-700 to-orange-500 opacity-20">
         CHAICODE
       </div>
     </footer>
