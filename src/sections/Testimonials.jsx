@@ -63,7 +63,7 @@ export default function Testimonials(){
           key={idx}
           className="flex flex-col justify-center bg-gray-900 items-center rounded-2xl shadow-md p-6 border border-gray-200 transition transform duration-300 hover:-translate-y-2"
         >
-          <img src={t.img} alt="student-img" className=" rounded-full w-20 h-20 object-cover border-2 border-orange-500"/>
+          <img src={t.img} alt="cohort-student-img" className=" rounded-full w-20 h-20 object-cover border-2 border-orange-500"/>
           
           <h3 className="font-semibold text-lg text-orange-500">{t.name}</h3>
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">{t.role}</p>

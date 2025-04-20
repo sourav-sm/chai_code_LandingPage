@@ -39,17 +39,17 @@ export default function AppDownload() {
           </div>
 
           <div className="flex flex-wrap gap-4 pt-4">
-            <a href="https://apps.apple.com/in/app/chaicode/id6504993143" target="_blank"   className="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-xl font-semibold text-white shadow-lg transition transform hover:-translate-y-1.5">
+            <a href="https://apps.apple.com/in/app/chaicode/id6504993143" target="_blank"  rel="noopener noreferrer"  className="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-xl font-semibold text-white shadow-lg transition transform hover:-translate-y-1.5">
               Download on the 
               <div className="flex gap-1">
               <FaAppStoreIos className="text-2xl"/>
                <span className="font-bold">
                App Store
-                </span>
+                </span> 
               </div>
                 
             </a>
-            <a href="https://play.google.com/store/apps/details?id=com.chaicode.courses&pcampaignid=web_share" target="_blank" className="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-xl font-semibold text-white shadow-lg transition transform hover:-translate-y-1.5">
+            <a href="https://play.google.com/store/apps/details?id=com.chaicode.courses&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" className="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-xl font-semibold text-white shadow-lg transition transform hover:-translate-y-1.5">
                Get it on 
               <div className="flex">
               <IoLogoGooglePlaystore className="text-2xl"/>

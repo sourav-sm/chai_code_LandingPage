@@ -37,7 +37,7 @@ export default function FreeApi() {
         </div>
   
         <div className="flex justify-center mt-12 mb-5">
-            <a href="https://freeapi.app/" target="_blank" className="border border-yellow-400 px-6 py-2 rounded-md bg-orange-500 text-white hover:text-black hover:bg-orange-800 text-xl flex items-center gap-1">
+            <a href="https://freeapi.app/" target="_blank" rel="noopener noreferrer" className="border border-yellow-400 px-6 py-2 rounded-md bg-orange-500 text-white hover:text-black hover:bg-orange-800 text-xl flex items-center gap-1">
               <span>Check FreeAPI Docs</span>
               <MdArrowOutward/>
             </a>

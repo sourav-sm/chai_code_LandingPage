@@ -47,7 +47,7 @@ const LogoCarousel = () => {
     <div className="bg-black">
       <Marquee gradient={false} speed={40}>
         {LogoImages.map(( logo,idx) => (
-          <img key={idx} src={logo.image} alt="" className=" w-40 h-24 " />
+          <img key={idx} src={logo.image} alt="comapny images" className=" w-40 h-24 " />
         ))}
       </Marquee>
     </div>

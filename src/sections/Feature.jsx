@@ -32,19 +32,19 @@ export default function Features(){
           <img src={hitesh} alt="Hitesh Choudhary" className="rounded-xl mx-auto mb-4 w-full h-auto max-h-64 object-cover"/>
           <h2 className="text-2xl font-bold mb-2">Hitesh Choudhary</h2>
           <p className="text-sm text-gray-300 mb-4">
-            Retired from corporate... stepped into 43 countries.
+       rel="noopener noreferrer"      Retired from corporate... stepped into 43 countries.
           </p>
           <h3 className="font-semibold text-lg mb-2">Approach</h3>
           <p className="text-sm text-gray-300">Project based courses with peer learning and bounties with many activities</p>
           {/* social links */}
           <div className="flex justify-center items-center gap-3 mt-3 text-3xl">
-            <a className="transition transform hover:-translate-y-1.5" href="https://github.com/hiteshchoudhary" target="_blank">
+            <a className="transition transform hover:-translate-y-1.5" href="https://github.com/hiteshchoudhary" target="_blank" rel="noopener noreferrer">
                <FaGithub/>
             </a>
-            <a className="transition transform hover:-translate-y-1.5" href="https://x.com/Hiteshdotcom?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+            <a className="transition transform hover:-translate-y-1.5" href="https://x.com/Hiteshdotcom?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noopener noreferrer">
                <FaXTwitter/>      
             </a>
-            <a className="transition transform hover:-translate-y-1.5" href="https://www.youtube.com/@chaiaurcode" target="_blank">
+            <a className="transition transform hover:-translate-y-1.5" href="https://www.youtube.com/@chaiaurcode" target="_blank" rel="noopener noreferrer"> 
                <FaYoutube/>    
             </a>
           </div>
