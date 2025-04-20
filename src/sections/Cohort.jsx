@@ -11,7 +11,7 @@ const cardData=[
     {
         videoUrl:"https://www.youtube.com/embed/VNb_LawBBWU",
         title:"GenAI with python | concept to deployment projects 1.0",
-        courseInfo:"Learn GenAl in Hindi with concepts, end to end projects with deployment and best learning community.",
+        courseInfo:"Learn GenAl in Hindi with concepts, end to end projects with deployment and best learning.",
         coursePrice:{ current:"4,999 INR",original:"7,999 INR"},
         courseUrl:"https://courses.chaicode.com/learn/batch/about?bundleId=227321"
     },
@@ -28,6 +28,12 @@ const cardData=[
         courseInfo:"Python, Machine Learning, deep learning, NLP, Al, Langchain and more. A complete Data science journey",
         coursePrice:{ current:"6,999 INR",original:"8,999 INR"},
         courseUrl:"https://courses.chaicode.com/learn/batch/about?bundleId=227817"
+    },{
+        videoUrl:"https://www.youtube.com/embed/Fw3FezexzV0",
+        title:"Coding Hero 2025",
+        courseInfo:"A place to learn together in community video , live , coding challenges, DSA practice, quiz, apptitude",
+        coursePrice:{ current:"299 INR",original:"599 INR"},
+        courseUrl:"https://courses.chaicode.com/learn/batch/about?bundleId=226894"
     }
 ]
 

@@ -2,7 +2,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 export default function Hero(){
     return (
-        <section className="bg-white lg:grid lg:h-screen lg:place-content-center dark:bg-black">
+        <section className="bg-white lg:grid lg:h-screen lg:place-content-center dark:bg-black w-full overflow-hidden">
      <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
         
        <div className="mx-auto max-w-3xl text-center">
@@ -37,7 +37,7 @@ export default function Hero(){
        <div className="aspect-video">
          <iframe
            className="w-full h-full rounded-md"
-           src="https://www.youtube.com/embed/q8EevlEpQ2A"
+           src="https://www.youtube.com/embed/W43v7ePnjAA"
              title="YouTube video player"
              frameBorder="0"
              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -2,13 +2,13 @@ import { MdArrowOutward } from "react-icons/md";
 
 export default function FreeApi() {
     return (
-      <div className="bg-black text-white font-sans p-8">
+      <div className="bg-black text-white font-sans p-8 w-full overflow-hidden">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-orange-500">
           FreeAPI - Open Source
         </h1>
   
         <div className="flex flex-col md:flex-row justify-between items-start gap-10">
-          <div className="w-full md:w-1/2 ml-10">
+          <div className="w-full md:w-1/2 md:ml-10">
             <h2 className="text-3xl font-semibold mb-4">
               Unlock Your Potential with Our API Hub
             </h2>

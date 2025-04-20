@@ -1,6 +1,10 @@
 import { FaDiscord } from "react-icons/fa";
 import chaicodewhite from "../assets/chaicode-white.png";
 
+function joinDiscord(){
+  window.open("https://discord.com/invite/WDrH3zuWFb","_blank");
+}
+
 export default function Community() {
   return (
     <section className="bg-black text-white py-16 px-6 md:px-20">
@@ -16,7 +20,7 @@ export default function Community() {
         </div>
 
         {/* Flipping Card */}
-        <div
+        <div onClick={joinDiscord}
           className="relative w-full md:w-1/2 h-64 group [perspective:1000px]"
         >
           <div

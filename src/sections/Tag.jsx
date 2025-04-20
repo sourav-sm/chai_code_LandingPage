@@ -117,7 +117,7 @@ export default function TopicsCloud() {
       <div className="bg-black">
         <div className="flex flex-col justify-center items-center text-white">
             <h1 className="text-4xl font-bold text-orange-500">Topics Cloud</h1>
-            <p className="text-lg mt-2">You can find videos and courses on topics and much more</p>
+            <p className="text-lg mt-2 p-2">You can find videos and courses on topics and much more</p>
         </div>
          <div className="w-full bg-black flex items-center justify-center px-6 py-12">
            <div className="flex flex-wrap justify-center gap-6 max-w-7xl text-white">
