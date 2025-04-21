@@ -20,10 +20,13 @@ A modern, responsive landing page for a coding platform, built with **React**, *
 
 ## 🖼️ Preview
 
- ![Screenshot 2025-04-20 232954](https://github.com/user-attachments/assets/e2ce059d-095e-402f-b690-90979976baaf)
+ 
+ ![image](https://github.com/user-attachments/assets/174177ed-a39f-4b24-8701-b6619800265a)
+
 
 ## Fully Responsive
-![image](https://github.com/user-attachments/assets/70eb014e-6f4a-4b86-beda-4f9624631de4)
+![image](https://github.com/user-attachments/assets/f90eaa93-fe0c-4ec8-aaff-1555b31bf738)
+
 
 ## 🔴 Live Link 
 **Do Check It Out [chaicode](https://chai-code-landing-page.vercel.app/)**
@@ -73,6 +76,8 @@ chaicode/
 │   │   ├── LogoCarousel.jsx
 │   │   ├── Rating.jsx
 │   │   └── TweetCards.jsx
+│   ├── hooks/
+│   │   └── useInViewFade.jsx
 │   ├── pages/
 │   │   ├── Home.jsx
 │   │   └── NotFound.jsx
