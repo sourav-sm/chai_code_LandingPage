@@ -1,7 +1,15 @@
 import { MdArrowOutward } from "react-icons/md";
+import useInViewFade from "../hooks/useInViewFade";
 
 export default function FreeApi() {
+  const {ref,isVisible}=useInViewFade();
     return (
+      <section
+       ref={ref}
+       className={`transition-all duration-[1200ms] ease-out transform ${
+        isVisible?'opacity-100 translate-0':'opacity-0 translate-y-16'
+       }`}
+      >
       <div className="bg-black text-white font-sans p-8 w-full overflow-hidden">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-orange-500">
           FreeAPI - Open Source
@@ -43,6 +51,7 @@ export default function FreeApi() {
             </a>
         </div>
       </div>
+      </section>
     );
   }
   

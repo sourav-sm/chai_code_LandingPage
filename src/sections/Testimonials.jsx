@@ -4,6 +4,8 @@ import person3 from "../assets/person3.jpg";
 import person4 from "../assets/person4.jpg";
 import person5 from "../assets/person5.jpg";
 import person6 from "../assets/person6.jpg";
+import useInViewFade from "../hooks/useInViewFade";
+
 
 const testimonials = [
   { 
@@ -48,8 +50,16 @@ const testimonials = [
 
 
 export default function Testimonials(){
+  const {ref,isVisible}=useInViewFade();
+
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center py-10 px-4">
+    <section
+     ref={ref}
+     className={`transition-all duration-[1200ms] ease-out transform ${
+       isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'
+     }`}
+    >
+    <div className="min-h-screen bg-black text-white flex flex-col items-center py-10 px-4 mt-5">
       <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center text-orange-500">
         Our Students feedback
       </h1>
@@ -76,5 +86,6 @@ export default function Testimonials(){
         Join Cohorts Live Classes
       </button>
     </div>
+    </section>
   );
 }

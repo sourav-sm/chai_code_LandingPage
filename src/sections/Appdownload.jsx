@@ -3,12 +3,19 @@ import { motion } from "framer-motion";
 import chaicodeApp from "../assets/chaicodeApp.webp";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { FaAppStoreIos } from "react-icons/fa6";
+import useInViewFade from "../hooks/useInViewFade";
 
 export default function AppDownload() {
+  const {ref,isVisible}=useInViewFade();
   return (
-    <section className="pb-10  bg-gradient-to-br from-black to-zinc-900 text-white py-1 px-6 md:px-12 lg:px-24">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <section className="pb-10  bg-gradient-to-br from-black to-zinc-900 text-white py-1 px-6 md:px-12 lg:px-24 mt-5 overflow-hidden">
+      <div className="mx-auto max-w-screen-xl grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         {/* Text Content */}
+        <section 
+           ref={ref}
+           className={`space-y-6 transition-all duration-[1200ms] ease-out transform ${
+             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-16'
+         }`}>
         <motion.div
           className="space-y-6"
           initial={{ opacity: 0, x: 50 }}
@@ -60,8 +67,15 @@ export default function AppDownload() {
             </a>
           </div>
         </motion.div>
+        </section>
 
-        {/* Mobile App Mockup with Animation */}
+        {/* Mobile App with Animation */}
+        <section 
+          className={`space-y-6 transition-all duration-[1200ms] ease-out transform ${
+            isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-16'
+         }`}
+        >
+        
         <motion.div
           className="flex justify-center items-center"
           initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
@@ -71,11 +85,12 @@ export default function AppDownload() {
            <motion.img
              src={chaicodeApp}
              alt="Chai code App"
-             className="w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] max-w-full h-auto rounded-[2rem] shadow-2xl border border-orange-500/20"
+             className="w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] max-w-full h-auto rounded-[2rem] shadow-2xl border border-orange-500/20 lg:mt-10"
              whileHover={{ scale: 1.05, rotate: 1 }}
              transition={{ type: "spring", stiffness: 200 }}
            />
         </motion.div>
+        </section>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import Card from "../components/Card";
+import useInViewFade from "../hooks/useInViewFade";
 
 const cardData=[
     {
@@ -39,7 +40,15 @@ const cardData=[
 
 
 export default function Cohort(){
+    const {ref,isVisible}=useInViewFade();
+
     return (
+        <section 
+        ref={ref}
+        className={`transition duration-[1200ms] ease-out transform ${
+         isVisible?'opacity-100 translate-0':'opacity-0 translate-y-16'
+        }`}
+        >
         <div className="bg-white lg:grid lg:h-screen lg:place-content-center dark:bg-black">
             <div className="text-white flex flex-col justify-center items-center mb-5">
                 <h1 className="text-5xl font-bold text-orange-500">Cohorts</h1>
@@ -73,5 +82,6 @@ export default function Cohort(){
                 </div>
             </div>
         </div>
+        </section>
     );
 }

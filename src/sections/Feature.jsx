@@ -1,18 +1,30 @@
 const cardStyle = "bg-[#1a1a1a] border border-gray-600 rounded-xl p-4 shadow-md text-white";
+import useInViewFade from "../hooks/useInViewFade";
 import hitesh from "../assets/hitesh-sir-image.jpg";
 import { FaGithub } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function Features(){
+  const {ref,isVisible}=useInViewFade();
     return(  
-        <div className="bg-black text-white py-16 px-4 md:px-20">
+      <section
+        ref={ref}
+        className={`transition-all duration-[1200ms] ease-out transform ${
+          isVisible ? 'opacity-100 translate-y-0 ' : 'opacity-0 translate-y-16'
+        } overflow-hidden`}
+      >
+
+        <div className="mx-auto max-w-screen-xl bg-black text-white py-16 px-4 md:px-20">
             <h1 className="text-4xl md:text-5xl font-bold text-center mb-2 text-orange-500">But Why ChaiCode ?</h1>
              <p className="text-center text-gray-400 text-lg mb-12">ChaiCode exists because we love tech and teaching</p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Left Column */}
-        <div className="space-y-6">
+        <div className={`space-y-6 transition-all duration-[1200ms] ease-out transform ${
+             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-16'
+         }`}>
+
           <div className={cardStyle}>
             <h3 className="font-bold text-lg mb-2">Comprehensive Curriculum</h3>
             <p className="text-sm text-gray-300">Master key concepts and hands-on skills with clarity and confidence...</p>
@@ -32,7 +44,7 @@ export default function Features(){
           <img src={hitesh} alt="Hitesh Choudhary" className="rounded-xl mx-auto mb-4 w-full h-auto max-h-64 object-cover"/>
           <h2 className="text-2xl font-bold mb-2">Hitesh Choudhary</h2>
           <p className="text-sm text-gray-300 mb-4">
-       rel="noopener noreferrer"      Retired from corporate... stepped into 43 countries.
+                Retired from corporate... stepped into 43 countries.
           </p>
           <h3 className="font-semibold text-lg mb-2">Approach</h3>
           <p className="text-sm text-gray-300">Project based courses with peer learning and bounties with many activities</p>
@@ -51,7 +63,10 @@ export default function Features(){
         </div>
 
         {/* Right Column */}
-        <div className="space-y-6">
+        <div className={`space-y-6 transition-all duration-[1200ms] ease-out transform ${
+            isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-16'
+        }`}>
+
           <div className={cardStyle}>
             <h3 className="font-bold text-lg mb-2">Code and Chill</h3>
             <p className="text-sm text-gray-300">Coding should be fun, not frightening...</p>
@@ -74,4 +89,5 @@ export default function Features(){
         </button>
       </div>
     </div>
+    </section>
 )}

@@ -16,6 +16,7 @@ import nextjs1 from "../assets/topic_clound_img/nextjs.jpeg";
 import javascript from "../assets/topic_clound_img/js.png";
 import nodejs from "../assets/topic_clound_img/nodejs.png";
 import typescript from "../assets/topic_clound_img/typescript.png";
+import useInViewFade from "../hooks/useInViewFade";
 
 
 const topics = [
@@ -113,7 +114,14 @@ const handleClick=(link)=>{
 
 
 export default function TopicsCloud() {
+  const {ref,isVisible}=useInViewFade();
     return (
+      <section
+        ref={ref}
+        className={`transition-all duration-[1200ms] ease-out transform ${
+          isVisible ? 'opacity-100 translate-y-0 ' : 'opacity-0 translate-y-16'
+        }`}
+      >
       <div className="bg-black">
         <div className="flex flex-col justify-center items-center text-white">
             <h1 className="text-4xl font-bold text-orange-500">Topics Cloud</h1>
@@ -148,5 +156,6 @@ export default function TopicsCloud() {
            </div>
          </div>  
       </div>
+      </section>
     );
   }

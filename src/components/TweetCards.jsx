@@ -1,5 +1,6 @@
 import { FaHeart } from "react-icons/fa";
 import tweetImg from "../assets/tweetImg.png";
+import useInViewFade from "../hooks/useInViewFade";
 
 const TweetInfo=[
     {
@@ -19,7 +20,15 @@ const TweetInfo=[
 
 
 export default function TweetCards(){
+  const {ref,isVisible}=useInViewFade();
+
     return (
+      <section
+       ref={ref}
+       className={`transition-all duration-[1200ms] ease-out transform ${
+        isVisible?'opacity-100 translate-0':'opacity-0 translate-y-16'
+       }`}
+      >
       <div className="text-white text-center py-10">
         <h2 className="text-lg text-gray-300">Love that we get from our community</h2>
           <div className="flex justify-center items-center gap-2">
@@ -40,7 +49,7 @@ export default function TweetCards(){
           ))}
         </div>
         
-        <div className="pt-5 pb-5">
+        <div className="pt-5 pb-5 transform transition hover:-translate-y-2">
         <a href="https://courses.chaicode.com/learn" className="mt-4 px-5 py-2 border-2 border-yellow-500 rounded bg-orange-500 transition">
           Join Cohorts Live Classes
         </a>
@@ -53,6 +62,7 @@ export default function TweetCards(){
           but are now founders of funded startups and product creators
         </p>
       </div>
+      </section>
     );
   };
   

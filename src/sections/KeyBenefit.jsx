@@ -2,6 +2,7 @@ import React from "react";
 import BenefitCard from "../components/BenefitCard";
 import { FaChalkboardTeacher, FaGift, FaBed, FaCode, FaBrain, FaBook } from "react-icons/fa";
 import CollageBouncingBalls from "../components/Collage"
+import useInViewFade from "../hooks/useInViewFade";
 
 const benefits = [
   {
@@ -37,8 +38,14 @@ const benefits = [
 ];
 
 const KeyBenefits = () => {
+  const {ref,isVisible}=useInViewFade();
   return (
-    <section className="bg-black text-white py-16 px-6">
+      <section
+        ref={ref}
+        className={`bg-black text-white py px-6 transition-all duration-[1200ms] ease-out transform ${
+          isVisible ? 'opacity-100 translate-y-0 ' : 'opacity-0 translate-y-16'
+        }`}
+      >
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-2 text-orange-500">Key Benefits of Cohorts</h1>
         <p className="text-center text-lg mb-12 text-gray-300">

@@ -1,13 +1,20 @@
 import { FaDiscord } from "react-icons/fa";
 import chaicodewhite from "../assets/chaicode-white.png";
+import useInViewFade from "../hooks/useInViewFade";
 
 function joinDiscord(){
   window.open("https://discord.com/invite/WDrH3zuWFb","_blank");
 }
 
 export default function Community() {
+  const {ref,isVisible}=useInViewFade();
   return (
-    <section className="bg-black text-white py-16 px-6 md:px-20">
+      <section
+        ref={ref}
+        className={`bg-black text-white py-16 px-6 md:px-20 transition-all duration-[1200ms] ease-out transform ${
+          isVisible ? 'opacity-100 translate-y-0 ' : 'opacity-0 translate-y-16'
+        }`}
+      >
       {/* Main content */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-12">
         {/* Text Block */}
