@@ -11,7 +11,7 @@ import person7 from "../assets/person7.jpg";
 const BOX_WIDTH = 600;
 const BOX_HEIGHT = 200;
 
-const imageList = [person1, person2, person3, person4, person5, person6, person7,person1, person2, person3, person4, person5, person6, person7];
+const imageList = [person1, person2, person3, person4, person5, person6, person7,person1, person2, person3, person4,person5, person6, person7,];
 const BALL_COUNT = imageList.length;
 
 function getRandom(min, max) {
@@ -24,8 +24,8 @@ const generateBalls = () => {
     imgurl,
     x: getRandom(40, BOX_WIDTH - 40),
     y: getRandom(40, BOX_HEIGHT - 40),
-    vx: getRandom(-2, 2),
-    vy: getRandom(-2, 2),
+    vx: getRandom(-0.2, 0.2),
+    vy: getRandom(-0.2, 0.2),
     radius: getRandom(25, 35),
   }));
 };

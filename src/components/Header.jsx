@@ -28,15 +28,15 @@ export default function Header(){
                 </li>
     
                 <li>
-                  <a className="text-black transition hover:text-white hover:cursor-pointer" href="#"> Udemy </a>
+                  <a className="text-black transition hover:text-white hover:cursor-pointer" href="#Udemy"> Udemy </a>
                 </li>
     
                 <li>
-                  <a className="text-black transition hover:text-white hover:cursor-pointer" href="https://docs.chaicode.com/" target='_blank'> Docs </a>
+                  <a className="text-black transition hover:text-white hover:cursor-pointer" href="https://docs.chaicode.com/" target='_blank' rel="noopener noreferrer"> Docs </a>
                 </li>
     
                 <li>
-                  <a className="text-black transition hover:text-white hover:cursor-pointer" href="#"> Reviews </a>
+                  <a className="text-black transition hover:text-white hover:cursor-pointer" href="#Review"> Reviews </a>
                 </li>
               </ul>
             </nav>
@@ -76,10 +76,10 @@ export default function Header(){
   {isMenuOpen && (
     <div className='md:hidden px-4 pb-4'>
         <nav className='mt-2 space-y-2 text-md font-medium'>
-          <a className='block text-black transition hover:text-white hover:cursor-pointer' href="">Cohorts</a>
-          <a className='block text-black transition hover:text-white' href="">Udemy</a>
-          <a className='block text-black transition hover:text-white' href="">Docs</a>
-          <a className='block text-black transition hover:text-white' href="">Reviews</a>
+          <a className='block text-black transition hover:text-white hover:cursor-pointer' href="#Cohort">Cohorts</a>
+          <a className='block text-black transition hover:text-white' href="#Udemy">Udemy</a>
+          <a className='block text-black transition hover:text-white' href="https://docs.chaicode.com/" target='_blank' rel="noopener noreferrer">Docs</a>
+          <a className='block text-black transition hover:text-white' href="#Review">Reviews</a>
         </nav>
     </div>
   )}

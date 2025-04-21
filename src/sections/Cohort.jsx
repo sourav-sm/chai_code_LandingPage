@@ -44,6 +44,7 @@ export default function Cohort(){
 
     return (
         <section 
+        id="Cohort"
         ref={ref}
         className={`transition duration-[1200ms] ease-out transform ${
          isVisible?'opacity-100 translate-0':'opacity-0 translate-y-16'
